@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "821850343057",
+    "project_id": "smart-helper-5a05a",
+    "storage_bucket": "smart-helper-5a05a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821850343057:android:a85ac103f9757a35aba130",
+        "android_client_info": {
+          "package_name": "com.example.master"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY9y6mmDKRc9TthPdgjMWo22E-UboHsoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

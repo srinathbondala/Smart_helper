@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Master</string>
+    <string name="disclame">Disclam:\n*Enter Valid details into above fields for registering agent\n* dob,doc must be in dd-mm-yyyy format\n*wrong details may lead to inconsisty of data</string>
+</resources>

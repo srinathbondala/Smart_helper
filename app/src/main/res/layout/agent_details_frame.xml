@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/white_back"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Agent Register"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/IA_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="51dp"
+            android:text="IA Code :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="44dp"
+            android:text="IA Name :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IA_code" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="58dp"
+            android:text="IA DOB :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/dob"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="58dp"
+            android:text="IA DOC :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/doc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <EditText
+            android:id="@+id/doc"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="Doc (dd-mm--yyyy)"
+            android:inputType="date"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#FF000000"
+            app:layout_constraintBottom_toTopOf="@+id/phno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FF000000"
+            android:ems="10"
+            android:hint="code"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FF000000"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/dob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/code" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="Dob (dd-mm--yyyy)"
+            android:inputType="date"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/mail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="38dp"
+            android:text="Mobile No :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/phno"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="36dp"
+            android:text="IA Mail ID :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/mail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="Mail Id"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/doc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phno" />
+
+        <EditText
+            android:id="@+id/phno"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="Mobile no"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/doc" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dob"
+            app:layout_constraintEnd_toEndOf="@+id/dob"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:srcCompat="@android:drawable/ic_menu_today" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/doc"
+            app:layout_constraintEnd_toEndOf="@+id/doc"
+            app:layout_constraintTop_toTopOf="@+id/doc"
+            app:srcCompat="@android:drawable/ic_menu_today" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_back"
+        android:padding="10dp"
+        android:text="@string/disclame"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
