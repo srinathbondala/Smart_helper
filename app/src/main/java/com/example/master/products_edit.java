@@ -49,8 +49,16 @@ public class products_edit extends Fragment implements View.OnClickListener{
             lit_faq.setBackgroundColor(Color.parseColor("#00ddff"));
             add.setTextColor(Color.parseColor("#000000"));
             lit_qr.setBackgroundColor(0);
-            getChildFragmentManager().beginTransaction()
-                    .replace(R.id.main_profile, new product_del_edit()).commit();
+            load_product_data();
         }
+    }
+
+    private void load_product_data() {
+        String dataToSend = "edit";
+        details_add fragmentB = new details_add();
+        Bundle bundle = new Bundle();
+        bundle.putString("key_name", dataToSend);
+        fragmentB.setArguments(bundle);
+        getChildFragmentManager().beginTransaction().replace(R.id.main_profile, fragmentB).commit();
     }
 }

@@ -9,9 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,10 +36,10 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/uplode">
+                    app:layout_constraintTop_toBottomOf="@+id/textView11">
 
                     <EditText
-                        android:id="@+id/area2"
+                        android:id="@+id/product_name_input"
                         android:layout_width="0dp"
                         android:layout_height="48dp"
                         android:layout_marginStart="10dp"
@@ -54,7 +54,7 @@
                         android:padding="10dp"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toTopOf="@+id/textView14"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="1.0"
@@ -68,42 +68,41 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="10dp"
-                        android:gravity="center"
+                        android:gravity="center_vertical"
                         android:text="Product Name :"
                         android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="normal"
                         app:layout_constraintBottom_toTopOf="@+id/textView14"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
-                        android:id="@+id/editTextTextMultiLine21"
+                        android:id="@+id/product_disc_input"
                         android:layout_width="0dp"
-                        android:layout_height="48dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:backgroundTint="@color/black"
                         android:ems="10"
                         android:gravity="start|top"
-                        android:hint="Discription"
+                        android:hint="Description"
                         android:importantForAutofill="no"
                         android:inputType="textMultiLine"
-                        android:padding="10dp"
+                        android:padding="13dp"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/textView14"
-                        app:layout_constraintTop_toBottomOf="@+id/area2" />
+                        app:layout_constraintTop_toBottomOf="@+id/product_name_input" />
 
                     <Button
                         android:id="@+id/submit"
                         android:layout_width="173dp"
                         android:layout_height="52dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="5dp"
                         android:text="Submit"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -116,27 +115,29 @@
                         android:layout_height="48dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical"
                         android:text="Product Code :"
                         android:textColor="#FF000000"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="normal"
+                        app:layout_constraintEnd_toStartOf="@+id/product_code_input"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                        app:layout_constraintTop_toBottomOf="@+id/product_disc_input" />
 
                     <TextView
                         android:id="@+id/textView14"
                         android:layout_width="140dp"
                         android:layout_height="48dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
                         android:gravity="center_vertical"
-                        android:padding="5dp"
-                        android:text="Discription :"
+                        android:text="Description :"
                         android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="normal"
-                        app:layout_constraintBottom_toTopOf="@+id/textView10"
+                        app:layout_constraintEnd_toStartOf="@+id/product_disc_input"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -146,30 +147,26 @@
                         android:layout_height="48dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:gravity="center"
+                        android:gravity="center_vertical"
                         android:text="Product Mode :"
                         android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName"
+                    <Spinner
+                        android:id="@+id/product_mode_input"
                         android:layout_width="0dp"
                         android:layout_height="48dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="@color/black"
-                        android:ems="10"
-                        android:hint="Mode"
-                        android:inputType="textPersonName"
-                        android:padding="10dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black"
+                        android:background="@drawable/background_driver"
+                        android:contentDescription="mode"
+                        android:gravity="center"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/textView15"
-                        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+                        app:layout_constraintTop_toBottomOf="@+id/product_code_input" />
 
                     <TextView
                         android:id="@+id/textView17"
@@ -178,15 +175,15 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Poster link:"
+                        android:text="Poster Status :"
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        app:layout_constraintEnd_toStartOf="@+id/textView19"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toStartOf="@+id/messagel"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/messagel"
                         android:layout_width="0dp"
                         android:layout_height="48dp"
                         android:layout_marginStart="10dp"
@@ -216,7 +213,7 @@
                         <ImageView
                             android:id="@+id/imageView"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="280dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -225,55 +222,43 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <EditText
-                        android:id="@+id/editTextTextPersonName2"
+                        android:id="@+id/product_code_input"
                         android:layout_width="0dp"
                         android:layout_height="48dp"
-                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:backgroundTint="@color/black"
                         android:ems="10"
+                        android:hint="Code"
                         android:inputType="textPersonName"
                         android:padding="10dp"
-                        android:text="Name"
                         android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/textView10"
-                        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine21" />
+                        app:layout_constraintTop_toBottomOf="@+id/product_disc_input" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <ImageView
                     android:id="@+id/probimg"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="20dp"
-                    android:layout_marginTop="5dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/img_13" />
-
-                <Button
-                    android:id="@+id/uplode"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="Browse"
-                    android:visibility="visible"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                    app:srcCompat="@drawable/img_16" />
 
                 <TextView
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:text="Select An Image to upload as image"
-                    android:textColor="#FF000000"
+                    android:textColor="@color/material_dynamic_neutral50"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

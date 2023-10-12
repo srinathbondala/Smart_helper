@@ -45,9 +45,10 @@ public class products_data {
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String description) {
         this.description = description;
+    }
+    public products_data() {
     }
 
 }

@@ -77,8 +77,8 @@ public class agents_details_frame extends Fragment implements View.OnClickListen
     }
 
     private void submit_details(String codes, String names, String mails, String docs, String dobs, String mobile) {
-        p.setMessage("Please wait Logging in");
-        p.setTitle("Login");
+        p.setMessage("Please wait...");
+        p.setTitle("Adding Data");
         p.setCanceledOnTouchOutside(false);
         p.show();
         Agent_data data = new Agent_data(codes,names,dobs,docs,mails,mobile);
