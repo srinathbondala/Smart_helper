@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Master</string>
-    <string name="disclame">Disclam:\n*Enter Valid details into above fields for registering agent\n* dob,doc must be in dd-mm-yyyy format\n*wrong details may lead to inconsisty of data</string>
+    <string name="disclaim">Disclaim:\n*Enter Valid details into above fields for registering agent\n* dob,doc must be in dd-mm-yyyy format\n*wrong details may lead to inconsistent of data</string>
     <string name="add_details">Add Details</string>
     <string name="proposal_no">Proposal No :</string>
     <string name="register">Register</string>
+    <string name="claim">Disclaim:\n*Enter Valid details into above fields for registering Data\n* Date of login must be in dd-mm-yyyy format\n*wrong details may lead to inconsistent of data</string>
 </resources>

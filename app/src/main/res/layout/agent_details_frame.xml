@@ -260,7 +260,7 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_back"
         android:padding="10dp"
-        android:text="@string/disclame"
+        android:text="@string/disclaim"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
